@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <script src="https://kit.fontawesome.com/e88db4e191.js" crossorigin="anonymous"></script>
+    <script src="script.js" ></script>
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=PT+Sans:wght@700&family=PT+Serif:wght@700&family=Poppins&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Devchallenges</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="outer-container">
+    <div class="header">
+      <h1>Checkout</h1>
+    </div>
+    <div class="container">
+      <div class="left-container">
+        <div class="contact-info">
+          <form id="myform" name="myform" onclick="return (validateForm())">
+          <h2>Contact Information</h2>
+          <label for="E-mail">E-mail</label><br>
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" id="E-mail" name="Email" placeholder="Enter your e-mail"><br>
+          <label for="Phone">Phone</label><br>
+          <i class="fa-solid fa-phone"></i>
+          <input type="tel" id="Phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="Phone" placeholder="Enter your phone number"><br>
+        </div>
+        <div class="shipping-address">
+          <h2>Shipping address</h2>
+          <label for="name">Full Name</label><br>
+          <i class="fa-solid fa-circle-user"></i>
+          <input type="text" name="name" id="name" placeholder="Your Name.."><br>
+          <label for="address">Address</label><br>
+          <i class="fa-solid fa-house"></i>
+          <input type="text" name="address" id="address" placeholder="Your Address.."><br>
+          <label for="city">City</label><br>
+          <i class="fa-solid fa-city"></i>
+          <input type="text" name="city" id="city" placeholder="Your City.."><br>
+          <div class="inner-container">
+            <div class="select">
+              <label for="country" >Country</label ><br>
+                <i class="fa-solid fa-earth-americas"></i>
+              <select name="country" id="country"><br>
+                <option value="america">America</option>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+              </select>
+            </div>
+            <div class="postal-container">
+              
+              <label for="postal-code" >Postal Code</label><br>
+              <i class="fa-solid fa-mailbox"></i>
+              <input type="number" name="postal-code" id="postal-code" placeholder="Your Postal Code.."><br>
+
+            </div>
+          </div>
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <label class="checkbox" for="checkbox">Save this information for next time</label>
+          
+          <br>
+        
+          <div class="button"  >
+            <input  type="submit" form="myform" value="Continue">
+          </div>
+        </form>
+          
+          
+        </div>
+      </div>
+      <div class="right-container">
+          <div class="img-container-1">
+            <div class="img">
+              <img src="photo1.png" alt="bag">
+            </div>
+            <div class="content">
+              <p class="bag">Vintage backbag</p>
+              <p class="price">$54.99 <del>$94.99</del></p>
+              <div class="items">
+                <p class="items">1</p>
+              <button class="increment">+</button> <button class="decrement">-</button>
+              </div>
+            </div>
+          </div>
+          <div class="img-container-2">
+            <img src="photo2.png" alt="shoes">
+            <div class="content">
+              <p class="bag">Levi Shoes</p>
+              <p class="price">$47.99 <del>$124.99</del></p>
+              <div class="items">
+                <p class="items">1</p>
+              <button class="increment">+</button> <button class="decrement">-</button>
+              </div>
+            </div>
+          </div>
+        
+            
+          <hr class="first-line">
+          <p class="shipping">Shipping <span class="price">$19</span></p>
+          <hr class="second-line">
+          <p class="total">Total <span class="price">$148.98</span></p>
+          </div>
+      </div>
+    </div>
+  </div>
+ 
+  </body>
+</html>
